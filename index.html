@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdiel Barber Studio - Barbería Premium y Cuidado Masculino</title>
+    <meta name="description" content="Experimenta el arte de la barbería tradicional con un toque moderno. Cortes de precisión, afeitados clásicos y cuidado de barba en un ambiente exclusivo.">
+    <meta property="og:title" content="Abdiel Barber Studio - Barbería Premium">
+    <meta property="og:description" content="Donde la artesanía y el estilo se encuentran.">
+    <meta property="og:image" content="https://images.pexels.com/photos/3998419/pexels-photo-3998419.jpeg">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="assets/img/logo-barberia-gris.webp" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="assets/img/logo-barberia-t.webp" media="(prefers-color-scheme: dark)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dorado': '#B99A6B',
+                        'dark-charcoal': '#1A1A1A',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-charcoal text-white">
+    <header class="bg-dark-charcoal/80 backdrop-blur-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-dorado" style="font-family: 'Playfair Display', serif;">Abdiel Barber Studio</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="servicios.html" class="nav-link">Servicios</a>
+                <a href="galeria.html" class="nav-link">Galería</a>
+                <a href="contacto.html" class="nav-link">Contacto</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-dark-charcoal/95">
+            <a href="index.html" class="block text-center py-2 text-white hover:bg-dorado hover:text-dark-charcoal">Inicio</a>
+            <a href="servicios.html" class="block text-center py-2 text-white hover:bg-dorado hover:text-dark-charcoal">Servicios</a>
+            <a href="galeria.html" class="block text-center py-2 text-white hover:bg-dorado hover:text-dark-charcoal">Galería</a>
+            <a href="contacto.html" class="block text-center py-2 text-white hover:bg-dorado hover:text-dark-charcoal">Contacto</a>
+        </div>
+    </header>
+    <main>
+
+        <!-- 1. Hero Section -->
+        <section class="relative h-screen flex items-center justify-center text-center">
+            <video playsinline autoplay muted loop class="hero-video">
+                <source src="https://www.pexels.com/video/3765995/download" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+            <div class="relative z-10 px-4 flex flex-col items-center justify-center">
+                <img src="assets/img/logo-barberia.webp" alt="Abdiel Barber Studio Logo" class="absolute inset-0 m-auto w-96 h-96 opacity-10 -z-10">
+                <h1 class="text-5xl md:text-7xl font-bold text-white leading-tight hero-title" style="font-family: 'Playfair Display', serif;">El Arte del Cuidado Masculino</h1>
+                <p class="text-lg md:text-xl text-gray-200 mt-4 max-w-2xl mx-auto hero-subtitle">Tradición y Vanguardia en Cada Corte</p>
+                <a href="contacto.html" class="inline-block bg-dorado text-dark-charcoal font-bold py-3 px-8 rounded-md mt-8 hover:bg-opacity-90 transition-colors duration-300 hero-button">Reservar Cita</a>
+            </div>
+        </section>
+
+        <!-- 2. Nuestros Servicios Section -->
+        <section class="py-20 bg-dark-charcoal">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold mb-2" data-aos="fade-up">Servicios de Firma</h2>
+                <div class="w-24 h-1 bg-dorado mx-auto mb-12" data-aos="fade-up" data-aos-delay="100"></div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="p-8 border border-gray-800 rounded-lg hover:border-dorado hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fa-solid fa-scissors text-4xl text-dorado mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2">Corte Clásico a Tijera</h3>
+                        <p class="text-gray-400">Un corte preciso que define tu estilo, realizado por manos expertas.</p>
+                    </div>
+                    <div class="p-8 border border-gray-800 rounded-lg hover:border-dorado hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fa-solid fa-person-booth text-4xl text-dorado mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2">Afeitado con Navaja</h3>
+                        <p class="text-gray-400">La experiencia de un afeitado tradicional con toalla caliente para una piel impecable.</p>
+                    </div>
+                    <div class="p-8 border border-gray-800 rounded-lg hover:border-dorado hover:-translate-y-2 transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fa-brands fa-redhat text-4xl text-dorado mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2">Arreglo de Barba</h3>
+                        <p class="text-gray-400">Diseño y cuidado para que tu barba luzca siempre perfecta y saludable.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. La Experiencia Section -->
+        <section class="py-20 bg-black">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2" data-aos="fade-right">
+                    <img src="https://images.pexels.com/photos/897262/pexels-photo-897262.jpeg" alt="Interior de la barbería" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <h2 class="text-4xl font-bold mb-4">Más que un Corte, una Experiencia</h2>
+                    <div class="w-24 h-1 bg-dorado mb-6"></div>
+                    <p class="text-gray-300 mb-4">En Abdiel Barber Studio, cada detalle cuenta. Desde nuestro café de bienvenida hasta la selección musical, hemos creado un refugio para el hombre moderno.</p>
+                    <p class="text-gray-300">Relájate en un ambiente exclusivo y deja que nuestros expertos artesanos cuiden de ti con productos de la más alta calidad. Tu momento de desconexión empieza aquí.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Testimonials Section -->
+        <section class="py-20 bg-dark-charcoal">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold mb-2" data-aos="fade-up">Lo que Dicen Nuestros Clientes</h2>
+                <div class="w-24 h-1 bg-dorado mx-auto mb-12" data-aos="fade-up" data-aos-delay="100"></div>
+                <div class="swiper-container swiper-testimonials" data-aos="fade-up" data-aos-delay="200">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide p-8">
+                            <p class="text-gray-300 italic mb-4">"El mejor afeitado de mi vida. La atención al detalle que tiene Abdiel es simplemente insuperable. Un verdadero profesional."</p>
+                            <div class="flex items-center justify-center">
+                                <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg" alt="Cliente Carlos V." class="w-12 h-12 rounded-full mr-4">
+                                <h4 class="font-bold text-dorado">- Carlos V.</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-8">
+                            <p class="text-gray-300 italic mb-4">"Abdiel no solo corta el pelo, es un artista. Entiende tu estilo y lo mejora. 100% recomendado para cualquiera que busque calidad."</p>
+                             <div class="flex items-center justify-center">
+                                <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg" alt="Cliente Javier M." class="w-12 h-12 rounded-full mr-4">
+                                <h4 class="font-bold text-dorado">- Javier M.</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-8">
+                            <p class="text-gray-300 italic mb-4">"El ambiente es increíble, la música es buena y sales sintiéndote renovado. Es mi ritual mensual indispensable."</p>
+                             <div class="flex items-center justify-center">
+                                <img src="https://images.pexels.com/photos/842980/pexels-photo-842980.jpeg" alt="Cliente Alejandro G." class="w-12 h-12 rounded-full mr-4">
+                                <h4 class="font-bold text-dorado">- Alejandro G.</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination mt-8"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. CTA Final Section -->
+        <section class="py-20 bg-black text-center">
+            <div class="container mx-auto px-6" data-aos="zoom-in">
+                <h2 class="text-4xl font-bold mb-4">¿Listo para tu Mejor Versión?</h2>
+                <p class="text-gray-300 max-w-xl mx-auto mb-8">Descubre nuestros servicios y encuentra el ritual de cuidado perfecto para ti.</p>
+                <a href="servicios.html" class="inline-block bg-dorado text-dark-charcoal font-bold py-3 px-8 rounded-md hover:bg-opacity-90 transition-colors duration-300">Ver Servicios y Precios</a>
+            </div>
+        </section>
+
+    </main>
+    <footer class="bg-black py-12">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    
+                    <h3 class="text-lg font-bold text-white mb-4" style="font-family: 'Playfair Display', serif;">Abdiel Barber Studio</h3>
+                    
+                    <p class="text-sm">El arte del cuidado masculino. Tradición y vanguardia en cada corte.</p>
+                </div>
+                <div>
+                    
+                    <h3 class="text-lg font-bold text-white mb-4" style="font-family: 'Playfair Display', serif;">Enlaces</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="servicios.html" class="hover:text-dorado transition-colors">Servicios</a></li>
+                        <li><a href="galeria.html" class="hover:text-dorado transition-colors">Galería</a></li>
+                        <li><a href="contacto.html" class="hover:text-dorado transition-colors">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4" style="font-family: 'Playfair Display', serif;">Síguenos</h3>
+                    <div class="flex justify-center space-x-6">
+                        <a href="#" class="text-xl hover:text-dorado transition-colors"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-xl hover:text-dorado transition-colors"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-xl hover:text-dorado transition-colors"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 mt-8">
+                <p class="text-sm">&copy;  Abdiel Barber Studio. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

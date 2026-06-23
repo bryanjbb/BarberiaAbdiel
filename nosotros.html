@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros | Abdiel Barber Studio</title>
+    <meta name="description" content="Conoce la historia, filosofía y al equipo detrás de Abdiel Barber Studio, tu barbería premium.">
+    <meta property="og:title" content="Nosotros | Abdiel Barber Studio">
+    <meta property="og:description" content="Conoce la historia y la pasión que nos define.">
+    <meta property="og:image" content="https://images.pexels.com/photos/1813272/pexels-photo-1813272.jpeg">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="assets/img/logo-barberia-gris.webp" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="assets/img/logo-barberia-t.webp" media="(prefers-color-scheme: dark)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dorado': '#B99A6B',
+                        'dark-charcoal': '#1A1A1A',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-charcoal text-white">
+    <header class="bg-dark-charcoal/80 backdrop-blur-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-dorado" style="font-family: 'Playfair Display', serif;">Abdiel Barber Studio</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="servicios.html" class="nav-link">Servicios</a>
+                <a href="galeria.html" class="nav-link">Galería</a>
+                <a href="contacto.html" class="nav-link">Contacto</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-dark-charcoal/95">
+            <a href="index.html" class="block text-center py-2 text-white hover:bg-dorado hover:text-dark-charcoal">Inicio</a>
+            <a href="servicios.html" class="block text-center py-2 text-white hover:bg-dorado hover:text-dark-charcoal">Servicios</a>
+            <a href="galeria.html" class="block text-center py-2 text-white hover:bg-dorado hover:text-dark-charcoal">Galería</a>
+            <a href="contacto.html" class="block text-center py-2 text-white hover:bg-dorado hover:text-dark-charcoal">Contacto</a>
+        </div>
+    </header>
+    <main>
+
+        <!-- 1. Page Header -->
+        <section class="relative h-96 flex items-center justify-center text-center bg-black">
+            <img src="https://images.pexels.com/photos/1813272/pexels-photo-1813272.jpeg" alt="Interior de la barbería" class="absolute top-0 left-0 w-full h-full object-cover opacity-30">
+            <div class="relative z-10 px-4" data-aos="fade-in">
+                <h1 class="text-5xl md:text-6xl font-bold text-white" style="font-family: 'Playfair Display', serif;">Nuestra Historia, Tu Confianza</h1>
+            </div>
+        </section>
+
+        <!-- 2. Nuestra Filosofía -->
+        <section class="py-20 bg-dark-charcoal">
+            <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+                <h2 class="text-4xl font-bold mb-2">Pasión por la Barbería</h2>
+                <div class="w-24 h-1 bg-dorado mx-auto mb-8"></div>
+                <p class="max-w-3xl mx-auto text-gray-300">
+                    Nacimos de la convicción de que un buen corte de pelo puede cambiar la confianza de un hombre. En Abdiel Barber Studio, no solo ofrecemos servicios; creamos experiencias. Fusionamos técnicas de la vieja escuela, transmitidas de generación en generación, con las últimas tendencias y productos para crear estilos atemporales y personalizados. Nuestra misión es simple: que cada cliente salga por nuestra puerta sintiéndose mejor que cuando entró.
+                </p>
+            </div>
+        </section>
+
+        <!-- 3. Conoce al Fundador -->
+        <section class="py-20 bg-black">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2" data-aos="fade-right">
+                    <img src="https://images.pexels.com/photos/3778603/pexels-photo-3778603.jpeg" alt="Retrato del fundador Abdiel" class="rounded-lg shadow-lg w-full h-auto object-cover" style="max-height: 500px;">
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left" data-aos-delay="100">
+                    <h2 class="text-4xl font-bold mb-4">Abdiel</h2>
+                    <h3 class="text-2xl text-dorado mb-4" style="font-family: 'Roboto', sans-serif; font-weight: 500;">Fundador y Maestro Barbero</h3>
+                    <div class="w-24 h-1 bg-dorado mb-6"></div>
+                    <p class="text-gray-300 mb-4">Con más de 15 años de experiencia, Abdiel ha perfeccionado su arte en las mejores barberías de Europa y América Latina. Su visión va más allá de la técnica: busca crear una conexión genuina con cada cliente, entendiendo su estilo de vida para crear un look que sea tan funcional como elegante.</p>
+                    <p class="text-gray-300">"Para mí, la barbería es un ritual. Es el momento en que un hombre se dedica tiempo a sí mismo. Mi objetivo es honrar ese momento con un servicio impecable."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Nuestros Valores -->
+        <section class="py-20 bg-dark-charcoal">
+            <div class="container mx-auto px-6 text-center">
+                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="p-8" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fa-solid fa-gem text-4xl text-dorado mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2">Calidad</h3>
+                        <p class="text-gray-400">Desde las herramientas que usamos hasta los productos que aplicamos, solo lo mejor es aceptable.</p>
+                    </div>
+                    <div class="p-8" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fa-solid fa-landmark text-4xl text-dorado mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2">Tradición</h3>
+                        <p class="text-gray-400">Honramos el legado de la barbería clásica, manteniendo vivas las técnicas que definen nuestro oficio.</p>
+                    </div>
+                    <div class="p-8" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fa-solid fa-lightbulb text-4xl text-dorado mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2">Innovación</h3>
+                        <p class="text-gray-400">Estamos en constante aprendizaje, adoptando nuevas tendencias y estilos para ofrecerte lo último.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Timeline -->
+        <section class="py-20 bg-black">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">Nuestra Trayectoria</h2>
+                <div class="relative max-w-2xl mx-auto">
+                    <!-- Vertical Line -->
+                    <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-700"></div>
+                    <!-- Timeline Item 1 -->
+                    <div class="flex items-center w-full mb-8" data-aos="fade-right">
+                        <div class="w-1/2 pr-8 text-right">
+                            <div class="p-4 bg-gray-800 rounded-lg">
+                                <p class="text-dorado font-bold">2015</p>
+                                <p>El Inicio de un Sueño</p>
+                            </div>
+                        </div>
+                        <div class="w-1/2 pl-8"></div>
+                    </div>
+                    <!-- Timeline Item 2 -->
+                    <div class="flex items-center w-full mb-8" data-aos="fade-left">
+                        <div class="w-1/2 pr-8"></div>
+                        <div class="w-1/2 pl-8 text-left">
+                            <div class="p-4 bg-gray-800 rounded-lg">
+                                <p class="text-dorado font-bold">2018</p>
+                                <p>Apertura del Estudio</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Timeline Item 3 -->
+                    <div class="flex items-center w-full" data-aos="fade-right">
+                        <div class="w-1/2 pr-8 text-right">
+                            <div class="p-4 bg-gray-800 rounded-lg">
+                                <p class="text-dorado font-bold">2023</p>
+                                <p>Reconocimiento Local</p>
+                            </div>
+                        </div>
+                        <div class="w-1/2 pl-8"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="bg-black py-12">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4" style="font-family: 'Playfair Display', serif;">Abdiel Barber Studio</h3>
+                    <p class="text-sm">El arte del cuidado masculino. Tradición y vanguardia en cada corte.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4" style="font-family: 'Playfair Display', serif;">Enlaces</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="servicios.html" class="hover:text-dorado transition-colors">Servicios</a></li>
+                        <li><a href="galeria.html" class="hover:text-dorado transition-colors">Galería</a></li>
+                        <li><a href="contacto.html" class="hover:text-dorado transition-colors">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4" style="font-family: 'Playfair Display', serif;">Síguenos</h3>
+                    <div class="flex justify-center space-x-6">
+                        <a href="#" class="text-xl hover:text-dorado transition-colors"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-xl hover:text-dorado transition-colors"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-xl hover:text-dorado transition-colors"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 mt-8">
+                <p class="text-sm">&copy; 2025 Abdiel Barber Studio. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
